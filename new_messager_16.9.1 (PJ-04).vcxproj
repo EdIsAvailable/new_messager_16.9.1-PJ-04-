@@ -129,7 +129,6 @@
   <ItemGroup>
     <ClInclude Include="Acc.h" />
     <ClInclude Include="Chat.h" />
-    <ClInclude Include="1Message.h" />
     <ClInclude Include="Message.h" />
     <ClInclude Include="NewUser.h" />
     <ClInclude Include="Server.h" />
@@ -139,7 +138,6 @@
     <ClCompile Include="Acc.cpp" />
     <ClCompile Include="Chat.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="1Message.cpp" />
     <ClCompile Include="Message.cpp" />
     <ClCompile Include="NewUser.cpp" />
     <ClCompile Include="Server.cpp" />

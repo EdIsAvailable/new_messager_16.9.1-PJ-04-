@@ -13,9 +13,9 @@ class Message
 
 public:
    Message(string userFrom, string userTo, string text);
-   void Show(void);
-   string getUserTo(void);
-   string getUserFrom(void);
+   void Show() const;
+   string getUserTo();
+   string getUserFrom();
    ~Message();
 };
 

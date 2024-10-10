@@ -7,7 +7,7 @@ Message::Message(string userFrom, string userTo, string text) : _userFrom(userFr
    _now = time(NULL);
 }
 
-void Message::Show(void)
+void Message::Show() const
 {
    struct tm* t_m = localtime(&_now);
    string dateSent = " " + std::to_string(t_m->tm_mday) + "-" + std::to_string(t_m->tm_mon + 1) + "-" + std::to_string(t_m->tm_year + 1900) +
@@ -15,12 +15,12 @@ void Message::Show(void)
    cout << "Содержимое: " << _text << " отправитель: " << _userFrom << " получатель: " << _userTo << " отправлено: " << dateSent << endl;
 }
 
-string Message::getUserTo(void)
+string Message::getUserTo()
 {
    return _userTo;
 }
 
-string Message::getUserFrom(void)
+string Message::getUserFrom()
 {
    return _userFrom;
 }
